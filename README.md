@@ -1,2 +1,2 @@
 # StickFighters
-# Fun fighting game for processing.  Pretty simple so far, but working on an update!
+# Fun fighting game for Processing.  Please comment if you have any suggestions or find any glitches.
