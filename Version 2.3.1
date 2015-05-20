@@ -56,7 +56,7 @@ float EduckProb = random(100);
 float EjumpProb = random(100);
 float EactionProb = random(1);
 float Etimer = 0;
-float Etiming = 500;
+float Etiming = 300;
 boolean Ejumping = false;
 boolean Ewalking = false;
 boolean Educking = false;
@@ -625,11 +625,11 @@ void afterWin() {
   level = level + 1;
   Etiming = Etiming - 5;
   warningTime = warningTime - 5;
-  if (level != 5) {
+  if (level <= 5) {
     EhitProb = EhitProb - 5;
   }
-  if (level == 5) {
-    EhitProb = EhitProb - 3.5;
+  if (level >= 5) {
+    EhitProb = 1;
   }
 }
 void reset() {
